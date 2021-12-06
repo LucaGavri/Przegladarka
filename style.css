@@ -67,10 +67,18 @@ body{
     align-items: center;
     flex-direction: column;
 }
+.main__columns__left__title{
+    padding: 5px;
+    font-size: 16px;
+}
 .main__columns__right{
     width: 45%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+}
+.main__columns__right__title{
+    padding: 5px;
+    font-size: 16px;
 }

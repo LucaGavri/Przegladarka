@@ -26,13 +26,23 @@ function oddNumbers(num) {
     }
 }
 
+function oddNumbers(num) {
+    if (num % 2 === 1) {
+        arrOdd.push(num);
+    }
+}
+
 btn.addEventListener('click', function (e){
     e.preventDefault();
     arrTwenty = [];
+    arrEven = [];
+    arrOdd = [];
     numsToArr();
     console.log(arrTwenty);
-    arrTwenty.forEach(evenNumbers)
-    console.log(arrEven)
-    arrTwenty.forEach(oddNumbers)
-    console.log(arrOdd)
+    arrTwenty.forEach(evenNumbers);
+    arrEven = arrEven.sort(function (a, b) {  return a - b;  });
+    console.log(arrEven);
+    arrTwenty.forEach(oddNumbers);
+    arrOdd = arrOdd.sort(function (a, b) {  return a - b;  });
+    console.log(arrOdd);
 })
